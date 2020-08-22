@@ -41,6 +41,7 @@ class login extends React.Component {
     handleSubmit = event => {
         event.preventDefault();
         const isValid = this.validate();
+        
         if (isValid) {
             console.log(this.state);
             this.props.signIn(this.state);
@@ -48,6 +49,11 @@ class login extends React.Component {
             this.setState(this.state);
         }
     };
+
+    routeChange=()=>{
+        this.props.history.push('/home');
+        console.log('redirect')
+    }
 
     render() {
         const { authError } = this.props
@@ -82,7 +88,7 @@ class login extends React.Component {
                         {this.state.passwordError}
                     </div>
                 </div>
-                <button type="submit" className= "btn btn-primary btn-block">Submit</button>
+                <button type="submit" className= "btn btn-primary btn-block" onClick={this.routeChange}>Submit</button>
                 <div>
                     { authError ? <p>{authError}</p> : null}
                 </div>

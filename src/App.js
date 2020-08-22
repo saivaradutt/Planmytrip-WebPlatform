@@ -1,13 +1,12 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import { connect } from 'react-redux';
 import { signOut } from '../src/store/actions/authActions';
 
 import Login from "./components/login";
 import SignUp from "./components/Signup";
-
+import Home from "./components/Home"
 const App = (props) => {
     const { auth } = props;
     const links = auth.uid ? <Link className="navbar-brand" to={"/"} onClick={props.signOut}>Log Out</Link> : null;
@@ -23,6 +22,7 @@ const App = (props) => {
                             <Route exact path='/' component={Login}/>
                             <Route path="/sign-in" component={Login}/>
                             <Route path="/sign-up" component={SignUp}/>
+                            <Route path="/home" component={Home}/>
                         </Switch>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {signUp} from '../store/actions/authActions'
 import { connect } from 'react-redux'
-import authReducer from "../store/reducers/authReducer";
+//import authReducer from "../store/reducers/authReducer";
 
  class Signup extends React.Component {
     state = {
@@ -69,6 +69,11 @@ import authReducer from "../store/reducers/authReducer";
             this.setState(this.state);
         }
     };
+    routeChange=()=>{
+        this.props.history.push('/home');
+        console.log('redirect')
+    }
+
 
     /*insertData(event){
         const fName = (event.target.firstName);
@@ -145,7 +150,7 @@ import authReducer from "../store/reducers/authReducer";
                         {this.state.passwordError}
                     </div>
                 </div>
-                <button type="submit" className= "btn btn-primary btn-block">Submit</button>
+                <button type="submit" className= "btn btn-primary btn-block" onClick={this.routeChange}>Submit</button>
                 {authError ? <p>{ authError } </p> : null}
                 <p className="forgot-password text-right">
                     Already registered!!!  <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
