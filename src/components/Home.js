@@ -22,16 +22,16 @@ class Home extends React.Component {
                                             <div className="main-menu  d-none d-lg-block">
                                                 <nav>
                                                     <ul id="navigation">
-                                                        <li><a className="active" href="index.html">home</a></li>
+                                                        <Link to={"/home"}><li>Home</li></Link>
                                                         <li><a href="aboutUs.html">AboutUs</a></li>
                                                         <li><a className=""
                                                                href="Hotels.html">Hotels</a>
                                                         </li>
-                                                        <li><a href="/#">Logout </a>
+                                                        <Link to={"/sign-in"}><li>Logout</li></Link>
 
-                                                        </li>
 
-                                                       <Link to={"/Contact"}><li><a href="contactUs.html">Contact</a></li></Link>
+
+                                                        <Link to={"/Contact"}><li>ContactUs</li></Link>
                                                     </ul>
                                                 </nav>
                                             </div>

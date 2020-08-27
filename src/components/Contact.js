@@ -25,16 +25,16 @@ class Contact extends React.Component {
                                             <div className="main-menu  d-none d-lg-block">
                                                 <nav>
                                                     <ul id="navigation">
-                                                        <Link to={"/home"}><li><a href="contactUs.html">Home</a></li></Link>
+                                                        <Link to={"/home"}><li>Home</li></Link>
                                                         <li><a href="aboutUs.html">AboutUs</a></li>
                                                         <li><a className=""
                                                                href="Hotels.html">Hotels</a>
                                                         </li>
-                                                        <li><a href="#">Logout </a>
+                                                        <Link to={"/sign-in"}><li>Logout</li></Link>
 
-                                                        </li>
 
-                                                        <li><a href="contactUs.html">Contact</a></li>
+
+                                                        <Link to={"/Contact"}><li>ContactUs</li></Link>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -54,11 +54,7 @@ class Contact extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="seach_icon">
-                                            <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
-                                                <i className="fa fa-search"> </i>
-                                            </a>
-                                        </div>
+
                                         <div className="col-12">
                                             <div className="mobile_menu d-block d-lg-none"> </div>
                                         </div>
@@ -71,21 +67,18 @@ class Contact extends React.Component {
                 </header>
 
                 <section className="contact-section">
+
+
+                            <div  style={{height: "480px", width:"100%", position: "relative", overflow: "hidden"}}>
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.22689410892!2d-73.55348038447745!3d45.525639479101756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918e0c061b07f%3A0x647a6b6d7cb681a7!2sISI%2C%20L&#39;institut%20Sup%C3%A9rieur%20d&#39;Informatique!5e0!3m2!1sen!2sca!4v1598571040709!5m2!1sen!2sca"
+                                    style={{height: "480px", width:"100%", position: "relative", overflow: "hidden"}} > </iframe>
+
+
+
+                        </div>
                     <div className="container">
-                        <div className="d-none d-sm-block mb-5 pb-4">
-                            {/* <div id="map" style={{height: "600px", position: "relative", overflow: "hidden"}}>
-                                <Map
-                                    google={this.props.google}
-                                    zoom={14}
-                                    style={mapStyles}
-                                    initialCenter={{
-                                        lat: -1.2884,
-                                        lng: 36.8233
-                                    }}
-                                /></div>*/}
-
-                                                    </div>
-
 
                         <div className="row">
                             <div className="col-12">
