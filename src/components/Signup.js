@@ -94,8 +94,105 @@ import { connect } from 'react-redux'
 */
     render() {
         const { authError } = this.props;
-        return (
-            <form onSubmit={this.handleSubmit}>
+        return (<div>
+                <div>
+                    <body style = {{backgroundImage:"url(https://static.vecteezy.com/system/resources/previews/000/538/894/non_2x/abstract-black-hexagon-pattern-on-yellow-neon-background-technology-style-honeycomb-vector.jpg)"}}>
+
+                    <img src="asseats/img/Signlogo.png" alt="" style={{borderRadius : 50, margin:"auto", padding : 50, marginLeft : "38%", height : 250, width :300}} />
+                    <div style={{marginLeft:"32%"}}>
+                        <form className="form-contact contact_form" onSubmit={this.handleSubmit}>
+                            <h3>Sign Up</h3>
+                            <div className="col-sm-6">
+                                <div className="form-group">
+                                    <input
+                                        name="firstName"
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="First name"
+                                        value={this.state.firstName}
+                                        onChange={this.handleChange}
+                                    />
+                                    <div style={{ fontSize: 12, color: "red" }}>
+                                        {this.state.firstnameError}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="form-group">
+                                    <input
+                                        name="lastName"
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Last name"
+                                        value={this.state.lastName}
+                                        onChange={this.handleChange}
+                                    />
+                                    <div style={{ fontSize: 12, color: "red" }}>
+                                        {this.state.lastnameError}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="form-group">
+                                    <input
+                                        name="email"
+                                        className="form-control"
+                                        placeholder="Email"
+                                        required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                        value={this.state.email}
+                                        onChange={this.handleChange}
+                                    />
+                                    <div style={{ fontSize: 12, color: "red" }}>
+                                        {this.state.emailError}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="form-group">
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        className="form-control"
+                                        placeholder="Password"
+                                        required
+                                        value={this.state.password}
+                                        onChange={this.handleChange}
+                                    />
+                                    <div style={{ fontSize: 12, color: "red" }}>
+                                        {this.state.passwordError}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="more_place_btn text-center">
+                                        <button className="boxed-btn4 " type="submit"onClick={this.routeChange}>Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/*<button type="submit" className= "btn btn-primary btn-block" onClick={this.routeChange}>Submit</button>*/}
+                            <div>
+                                { authError ? <p>{authError}</p> : null}
+                            </div>
+
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="more_place_btn text-center">
+                                        <p>
+                                           Already Registered!!!  <Link className="nav-link" to={"/sign-in"}>Sign-In</Link>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    </body>
+                </div>
+
+            {/*<form onSubmit={this.handleSubmit}>
                 <h3>Sign Up</h3>
                 <div className="form-group">
                     <input
@@ -156,7 +253,8 @@ import { connect } from 'react-redux'
                     Already registered!!!  <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
                 </p>
 
-            </form>
+            </form>*/}
+            </div>
         );
     }
 }

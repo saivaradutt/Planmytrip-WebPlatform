@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 class Home extends React.Component {
     render() {
@@ -30,7 +31,7 @@ class Home extends React.Component {
 
                                                         </li>
 
-                                                        <li><a href="contactUs.html">Contact</a></li>
+                                                       <Link to={"/Contact"}><li><a href="contactUs.html">Contact</a></li></Link>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -279,13 +280,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="more_place_btn text-center">
-                                    <a className="boxed-btn4" href="/#">More Places</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 

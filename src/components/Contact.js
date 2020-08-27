@@ -1,10 +1,7 @@
 import React from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import {Link} from "react-router-dom";
 
-const mapStyles = {
-    width: '100%',
-    height: '100%'
-};
+
 
 
 class Contact extends React.Component {
@@ -28,7 +25,7 @@ class Contact extends React.Component {
                                             <div className="main-menu  d-none d-lg-block">
                                                 <nav>
                                                     <ul id="navigation">
-                                                        <li><a className="active" href="index.html">home</a></li>
+                                                        <Link to={"/home"}><li><a href="contactUs.html">Home</a></li></Link>
                                                         <li><a href="aboutUs.html">AboutUs</a></li>
                                                         <li><a className=""
                                                                href="Hotels.html">Hotels</a>
@@ -76,7 +73,7 @@ class Contact extends React.Component {
                 <section className="contact-section">
                     <div className="container">
                         <div className="d-none d-sm-block mb-5 pb-4">
-                            <div id="map" style={{height: "600px", position: "relative", overflow: "hidden"}}>
+                            {/* <div id="map" style={{height: "600px", position: "relative", overflow: "hidden"}}>
                                 <Map
                                     google={this.props.google}
                                     zoom={14}
@@ -85,7 +82,7 @@ class Contact extends React.Component {
                                         lat: -1.2884,
                                         lng: 36.8233
                                     }}
-                                /></div>
+                                /></div>*/}
 
                                                     </div>
 
@@ -311,7 +308,11 @@ class Contact extends React.Component {
 
 
 }
+
+export default Contact;
+{/*
 export default GoogleApiWrapper({
     apiKey: "AIzaSyBXvAl1YrInIQ4n1IYOmSzrpj1ZjXgU7gY "
-})(Contact);
+})(Contact);*/}
+
 
