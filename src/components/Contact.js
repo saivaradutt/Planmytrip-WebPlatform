@@ -31,8 +31,8 @@ class Contact extends React.Component {
                                                         <Link to={"/home"}><li>Home</li></Link>
                                                         <Link to={"/about-us"}><li>AboutUs</li></Link>
                                                         <Link to={"/hotels"}><li>Hotels</li></Link>
-                                                        <Link to={"/sign-in"}><li>Logout</li></Link>
                                                         <Link to={"/Contact"}><li>ContactUs</li></Link>
+                                                        <Link to={"/sign-in"}><li>Logout</li></Link>
                                                     </ul>
                                                 </nav>
                                             </div>

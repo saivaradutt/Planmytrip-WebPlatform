@@ -1,8 +1,63 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
+import countriesList from "./countries.json";
+import {
+    Button,
+    Input,
+    Footer,
+    Card,
+    CardBody,
+    CardImage,
+    CardTitle,
+    CardText
+} from "mdbreact";
 class Home extends React.Component {
+    state = {
+        search :''
+    };
+
+    /* handleSearch = (event) => {
+         event.preventDefault();
+
+     }*/
+    handleChange = (event) => {
+        this.setState({search: event.target.value});
+    }
+    renderCity = city => {
+        const { search } = this.state;
+        var code = city.id;
+
+        return (
+            <div className="col-lg-4 col-md-6" style={{ marginTop: "20px" }}>
+                <Card>
+                    <CardBody>
+                        <div className="single_place">
+                            <img
+                                src={"asseats/img/place/"+code+".png"}
+                                //className={"flag flag-" + code}
+                                alt={city.name}
+                            />
+                        </div>
+                        <div className="place_info">
+                        <CardTitle title={city.name}>
+                            {city.name.substring(0, 15)}
+                            <p>{city.country}</p>
+                            <p>{city.description}</p>
+                            {city.name.length > 15 && "..."}
+                        </CardTitle>
+                        </div>
+                    </CardBody>
+                </Card>
+            </div>
+        );
+    };
+
     render() {
+        const { search } = this.state;
+        const filteredCities = countriesList.filter(country => {
+            return country.name.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+        });
+
         return(
             <div className="App">
                 <header>
@@ -25,8 +80,8 @@ class Home extends React.Component {
                                                         <Link to={"/home"}><li>Home</li></Link>
                                                         <Link to={"/about-us"}><li>AboutUs</li></Link>
                                                         <Link to={"/hotels"}><li>Hotels</li></Link>
-                                                        <Link to={"/sign-in"}><li>Logout</li></Link>
                                                         <Link to={"/Contact"}><li>ContactUs</li></Link>
+                                                        <Link to={"/sign-in"}><li>Logout</li></Link>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -57,36 +112,80 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </header>
+                <div className="video_area video_bg overlay">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-xl-12 col-md-12">
+                                <div className="where_togo_area">
+                                    <div className="container">
+                                        <div className="row align-items-center">
+                                            <div className="col-lg-3">
+                                                <div className="form_area">
+                                                    <h3>Where you want to go?</h3>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-9">
+                                                <div className="search_wrap">
+                                                    <form className="search_form" action="#">
+                                                        <div className="input_field">
+                                                            <input type="text" placeholder="Where to go?" onChange={this.handleChange}/>
+                                                        </div>
 
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div className="where_togo_area">
-                            <div className="container">
-                                <div className="row align-items-center">
-                                    <div className="col-lg-3">
-                                        <div className="form_area">
-                                            <h3>Where you want to go?</h3>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-9">
-                                        <div className="search_wrap">
-                                            <form className="search_form" action="#">
-                                                <div className="input_field">
-                                                    <input type="text" placeholder="Where to go?" />
-                                                </div>
+                                </div>
 
-                                                <div className="search_btn">
-                                                    <button className="boxed-btn4 " type="submit">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/*} <div className="slider_area">
+                    <div className="slider_active owl-carousel">
+                        <div className="single_slider  d-flex align-items-center slider_bg_1 overlay">
+                            <div className="container">
+                                <div className="row align-items-center">
+                                    <div className="col-xl-12 col-md-12">
+                                        <div className="where_togo_area">
+                                            <div className="container">
+                                                <div className="row align-items-center">
+                                                    <div className="col-lg-3">
+                                                        <div className="form_area">
+                                                            <h3>Where you want to go?</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-9">
+                                                        <div className="search_wrap">
+                                                            <form className="search_form" action="#">
+                                                                <div className="input_field">
+                                                                    <input type="text" placeholder="Where to go?" onChange={this.handleChange}/>
+                                                                </div>
+
+                                                            </form>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </form>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+
                     </div>
-                </div>
+
+
+                </div>*/}
+
+
+
+
 
 
                 <div className="popular_places_area">
@@ -95,98 +194,44 @@ class Home extends React.Component {
                             <div className="col-lg-6">
                                 <div className="section_title text-center mb_70">
                                     <h3>Popular Places</h3>
-                                    <p>Just Go,go see all the beauty in the world</p>
+                                    <p>Suffered alteration in some form, by injected humour or good day randomised booth
+                                        anim 8-bit hella wolf moon beard words.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single_place">
-                                    <div className="thumb">
-                                        <Link to={"/hotels"}><img src="asseats/img/place/1.png" alt="" /></Link>
-                                    </div>
-                                    <div className="place_info">
-                                        <Link to={"/hotels"}><h3 style={{color:"green",marginLeft:"25%"}}>California</h3></Link>
-                                        <div className="rating_days d-flex justify-content-between">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single_place">
-                                    <div className="thumb">
-                                        <Link to={"/hotels"}><img src="asseats/img/place/2.png" alt="" /></Link>
-                                    </div>
-                                    <div className="place_info">
-                                        <Link to={"/hotels"}><h3 style={{color:"green",marginLeft:"25%"}}>Korola Megna</h3></Link>
-                                        <div className="rating_days d-flex justify-content-between">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single_place">
-                                    <div className="thumb">
-                                        <Link to={"/hotels"}><img src="asseats/img/place/3.png" alt="" /></Link>
-                                    </div>
-                                    <div className="place_info">
-                                        <Link to={"/hotels"}><h3>London</h3></Link>
-                                        <div className="rating_days d-flex justify-content-between">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single_place">
-                                    <div className="thumb">
-                                        <Link to={"/hotels"}><img src="asseats/img/place/4.png" alt="" /></Link>
-                                    </div>
-                                    <div className="place_info">
-                                        <Link to={"/hotels"}><h3>Montreal</h3></Link>
-                                        <div className="rating_days d-flex justify-content-between">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single_place">
-                                    <div className="thumb">
-                                        <Link to={"/hotels"}><img src="asseats/img/place/5.png" alt="" /></Link>
-                                    </div>
-                                    <div className="place_info">
-                                        <Link to={"/hotels"}><h3>Toronto</h3></Link>
-                                        <div className="rating_days d-flex justify-content-between">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single_place">
-                                    <div className="thumb">
-                                        <Link to={"/hotels"}><img src="asseats/img/place/6.png" alt="" /></Link>
-                                    </div>
-                                    <div className="place_info">
-                                        <Link to={"/hotels"}><h3>Paris</h3></Link>
-                                    </div>
-                                </div>
-                            </div>
+                            {filteredCities.map(city => {
+                                return this.renderCity(city);
+                            })}
                         </div>
-                            </div>
+                        <div className="row">
+
+
+
+
+
+
                         </div>
 
+                    </div>
+                </div>
 
 
+                <div className="video_area video_bg overlay">
+                    <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="video_wrap text-center">
-                                    {/*<a className="popup-video video_play_button"
-                                           href="https://www.youtube.com/watch?v=f59dDEk57i0"> </a>*/}
-                                        <iframe  title="videoframe" style={{height: "1000px", width:"100%", position: "relative", overflow: "hidden"}}  src="https://www.youtube.com/embed/-5Tb67fpAqE"
-                                                > </iframe>
+                                    <h3>Enjoy Video</h3>
+                                    <div className="video_icon">
+                                        <a className="popup-video video_play_button"
+                                           href="https://www.youtube.com/watch?v=f59dDEk57i0">
+                                            <i className="fa fa-play"> </i>
+                                        </a>
+                                    </div>
                                 </div>
-
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -372,31 +417,34 @@ class Home extends React.Component {
                                         </h3>
                                         <div className="instagram_feed">
                                             <div className="single_insta">
+                                                <a href="/#">
                                                     <img src="asseats/img/instagram/1.png" alt="" />
-
+                                                </a>
                                             </div>
                                             <div className="single_insta">
+                                                <a href="/#">
                                                     <img src="asseats/img/instagram/2.png" alt="" />
-
+                                                </a>
                                             </div>
                                             <div className="single_insta">
-
+                                                <a href="/#">
                                                     <img src="asseats/img/instagram/3.png" alt="" />
+                                                </a>
                                             </div>
                                             <div className="single_insta">
-
+                                                <a href="/#">
                                                     <img src="asseats/img/instagram/4.png" alt="" />
-
+                                                </a>
                                             </div>
                                             <div className="single_insta">
-
+                                                <a href="/#">
                                                     <img src="asseats/img/instagram/5.png" alt="" />
-
+                                                </a>
                                             </div>
                                             <div className="single_insta">
-
+                                                <a href="/#">
                                                     <img src="asseats/img/instagram/6.png" alt="" />
-
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

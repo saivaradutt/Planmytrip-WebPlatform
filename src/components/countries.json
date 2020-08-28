@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "California",
+    "country": "United States Of America",
+    "description": "California, a western U.S. state, stretches from the Mexican border along the Pacific for nearly 900 miles."
+  },
+  {
+    "id": 2,
+    "name": "Bali",
+    "country": "Thailand",
+    "description": "Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs."
+  },
+  {
+    "id": 3,
+    "name": "London",
+    "country": "United Kingdom",
+    "description": "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times."
+  },
+  {
+    "id": 4,
+    "name": "Miami",
+    "country": "Unites States Of America",
+    "description": "Miami, officially the City of Miami, is the seat of Miami-Dade County."
+  },
+  {
+    "id": 5,
+    "name": "Athen",
+    "country": "Greece",
+    "description": "It is the heart of Ancient Greece, a powerful civilization and empire."
+  },
+  {
+    "id": 6,
+    "name": "Saint Martin",
+    "country": "Sint Maarten",
+    "description": "Saint Martin is part of the Leeward Islands in the Caribbean Sea."
+  }
+]
