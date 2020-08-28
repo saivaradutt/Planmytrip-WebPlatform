@@ -5,6 +5,9 @@ import {Link} from "react-router-dom";
 
 
 class Contact extends React.Component {
+    onButtonClickHandler = () => {
+        window.alert('Thanks')
+    };
     render() {
         return(
             <div >
@@ -116,7 +119,7 @@ class Contact extends React.Component {
                                         </div>
                                     </div>
                                     <div className="form-group mt-3">
-                                        <button type="submit" className="button button-contactForm boxed-btn">Send
+                                        <button type="submit" onClick={this.onButtonClickHandler}className="button button-contactForm boxed-btn">Send
                                         </button>
                                     </div>
                                 </form>

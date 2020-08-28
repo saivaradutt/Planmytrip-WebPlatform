@@ -58,44 +58,36 @@ class Home extends React.Component {
                     </div>
                 </header>
 
-
-                <div className="slider_area">
-                    <div className="slider_active owl-carousel">
-                        <div className="single_slider  d-flex align-items-center slider_bg_1 overlay">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="where_togo_area">
                             <div className="container">
                                 <div className="row align-items-center">
-                                    <div className="col-xl-12 col-md-12">
-                                        <div className="where_togo_area">
-                                            <div className="container">
-                                                <div className="row align-items-center">
-                                                    <div className="col-lg-3">
-                                                        <div className="form_area">
-                                                            <h3>Where you want to go?</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-lg-9">
-                                                        <div className="search_wrap">
-                                                            <form className="search_form" action="#">
-                                                                <div className="input_field">
-                                                                    <input type="text" placeholder="Where to go?" />
-                                                                </div>
-
-                                                                <div className="search_btn">
-                                                                    <button className="boxed-btn4 " type="submit">Search</button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div className="col-lg-3">
+                                        <div className="form_area">
+                                            <h3>Where you want to go?</h3>
                                         </div>
+                                    </div>
+                                    <div className="col-lg-9">
+                                        <div className="search_wrap">
+                                            <form className="search_form" action="#">
+                                                <div className="input_field">
+                                                    <input type="text" placeholder="Where to go?" />
+                                                </div>
 
+                                                <div className="search_btn">
+                                                    <button className="boxed-btn4 " type="submit">Search</button>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
 
                 <div className="popular_places_area">
                     <div className="container">
