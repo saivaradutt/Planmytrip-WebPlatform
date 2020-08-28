@@ -101,7 +101,7 @@ import { connect } from 'react-redux'
                     <img src="asseats/img/Signlogo.png" alt="" style={{borderRadius : 50, margin:"auto", padding : 50, marginLeft : "38%", height : 250, width :300}} />
                     <div style={{marginLeft:"32%"}}>
                         <form className="form-contact contact_form" onSubmit={this.handleSubmit}>
-                            <h3>Sign Up</h3>
+                            <h3 style={{color:"white",marginLeft:"20%"}}>Sign Up</h3>
                             <div className="col-sm-6">
                                 <div className="form-group">
                                     <input

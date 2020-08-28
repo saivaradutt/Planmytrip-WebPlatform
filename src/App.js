@@ -1,15 +1,17 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { connect } from 'react-redux';
 import { signOut } from '../src/store/actions/authActions';
 import Login from "./components/login";
 import SignUp from "./components/Signup";
 import Home from "./components/Home"
 import Contact from "./components/Contact";
+import AboutUs from "./components/AboutUs";
+import Hotels from "./components/Hotels";
 const App = (props) => {
-    const { auth } = props;
-    const links = auth.uid ? <Link className="navbar-brand" to={"/"} onClick={props.signOut}>Log Out</Link> : null;
+   // const { auth } = props;
+    //const links = auth.uid ? <Link className="navbar-brand" to={"/"} onClick={props.signOut}>Log Out</Link> : null;
     return (<Router>
             <div className="App">
                 { /* <div className="container">
@@ -23,7 +25,11 @@ const App = (props) => {
                             <Route path="/sign-in" component={Login}/>
                             <Route path="/sign-up" component={SignUp}/>
                             <Route path="/home" component={Home}/>
+                            <Route path="/about-us" component={AboutUs}/>
+                            <Route path="/hotels" component={Hotels}/>
                             <Route path="/Contact" component={Contact}/>
+
+
                         </Switch>
                     </div>
                 </div>

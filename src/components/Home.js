@@ -23,14 +23,9 @@ class Home extends React.Component {
                                                 <nav>
                                                     <ul id="navigation">
                                                         <Link to={"/home"}><li>Home</li></Link>
-                                                        <li><a href="aboutUs.html">AboutUs</a></li>
-                                                        <li><a className=""
-                                                               href="Hotels.html">Hotels</a>
-                                                        </li>
+                                                        <Link to={"/about-us"}><li>AboutUs</li></Link>
+                                                        <Link to={"/hotels"}><li>Hotels</li></Link>
                                                         <Link to={"/sign-in"}><li>Logout</li></Link>
-
-
-
                                                         <Link to={"/Contact"}><li>ContactUs</li></Link>
                                                     </ul>
                                                 </nav>
@@ -99,17 +94,8 @@ class Home extends React.Component {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
-
                 </div>
-
-
-
-
-
 
                 <div className="popular_places_area">
                     <div className="container">
@@ -117,8 +103,7 @@ class Home extends React.Component {
                             <div className="col-lg-6">
                                 <div className="section_title text-center mb_70">
                                     <h3>Popular Places</h3>
-                                    <p>Suffered alteration in some form, by injected humour or good day randomised booth
-                                        anim 8-bit hella wolf moon beard words.</p>
+                                    <p>Just Go,go see all the beauty in the world</p>
                                 </div>
                             </div>
                         </div>
@@ -126,25 +111,11 @@ class Home extends React.Component {
                             <div className="col-lg-4 col-md-6">
                                 <div className="single_place">
                                     <div className="thumb">
-                                        <img src="asseats/img/place/1.png" alt="" />
-                                        <a href="/#" className="prise">$500</a>
+                                        <Link to={"/hotels"}><img src="asseats/img/place/1.png" alt="" /></Link>
                                     </div>
                                     <div className="place_info">
-                                        <a href="destination_details.html"><h3>California</h3></a>
-                                        <p>United State of America</p>
+                                        <Link to={"/hotels"}><h3 style={{color:"green",marginLeft:"25%"}}>California</h3></Link>
                                         <div className="rating_days d-flex justify-content-between">
-                                <span className="d-flex justify-content-center align-items-center">
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <a href="/#">(20 Review)</a>
-                                </span>
-                                            <div className="days">
-                                                <i className="fa fa-clock-o"> </i>
-                                                <a href="/#">5 Days</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -152,25 +123,11 @@ class Home extends React.Component {
                             <div className="col-lg-4 col-md-6">
                                 <div className="single_place">
                                     <div className="thumb">
-                                        <img src="asseats/img/place/2.png" alt="" />
-                                        <a href="/#" className="prise">$500</a>
+                                        <Link to={"/hotels"}><img src="asseats/img/place/2.png" alt="" /></Link>
                                     </div>
                                     <div className="place_info">
-                                        <a href="/#"><h3>Korola Megna</h3></a>
-                                        <p>United State of America</p>
+                                        <Link to={"/hotels"}><h3 style={{color:"green",marginLeft:"25%"}}>Korola Megna</h3></Link>
                                         <div className="rating_days d-flex justify-content-between">
-                                <span className="d-flex justify-content-center align-items-center">
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <a href="/#">(20 Review)</a>
-                                </span>
-                                            <div className="days">
-                                                <i className="fa fa-clock-o"> </i>
-                                                <a href="/#">5 Days</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -178,25 +135,25 @@ class Home extends React.Component {
                             <div className="col-lg-4 col-md-6">
                                 <div className="single_place">
                                     <div className="thumb">
-                                        <img src="asseats/img/place/3.png" alt="" />
-                                        <a href="/#" className="prise">$500</a>
+                                        <Link to={"/hotels"}><img src="asseats/img/place/3.png" alt="" /></Link>
                                     </div>
                                     <div className="place_info">
-                                        <a href="/#"><h3>London</h3></a>
-                                        <p>United State of America</p>
+                                        <Link to={"/hotels"}><h3>London</h3></Link>
                                         <div className="rating_days d-flex justify-content-between">
-                                <span className="d-flex justify-content-center align-items-center">
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <a href="/#">(20 Review)</a>
-                                </span>
-                                            <div className="days">
-                                                <i className="fa fa-clock-o"> </i>
-                                                <a href="/#">5 Days</a>
-                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="col-lg-4 col-md-6">
+                                <div className="single_place">
+                                    <div className="thumb">
+                                        <Link to={"/hotels"}><img src="asseats/img/place/4.png" alt="" /></Link>
+                                    </div>
+                                    <div className="place_info">
+                                        <Link to={"/hotels"}><h3>Montreal</h3></Link>
+                                        <div className="rating_days d-flex justify-content-between">
                                         </div>
                                     </div>
                                 </div>
@@ -204,25 +161,11 @@ class Home extends React.Component {
                             <div className="col-lg-4 col-md-6">
                                 <div className="single_place">
                                     <div className="thumb">
-                                        <img src="asseats/img/place/4.png" alt="" />
-                                        <a href="/#" className="prise">$500</a>
+                                        <Link to={"/hotels"}><img src="asseats/img/place/5.png" alt="" /></Link>
                                     </div>
                                     <div className="place_info">
-                                        <a href="/#"><h3>Miami Beach</h3></a>
-                                        <p>United State of America</p>
+                                        <Link to={"/hotels"}><h3>Toronto</h3></Link>
                                         <div className="rating_days d-flex justify-content-between">
-                                <span className="d-flex justify-content-center align-items-center">
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <a href="/#">(20 Review)</a>
-                                </span>
-                                            <div className="days">
-                                                <i className="fa fa-clock-o"> </i>
-                                                <a href="/#">5 Days</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -230,76 +173,28 @@ class Home extends React.Component {
                             <div className="col-lg-4 col-md-6">
                                 <div className="single_place">
                                     <div className="thumb">
-                                        <img src="asseats/img/place/5.png" alt="" />
-                                        <a href="/#" className="prise">$500</a>
+                                        <Link to={"/hotels"}><img src="asseats/img/place/6.png" alt="" /></Link>
                                     </div>
                                     <div className="place_info">
-                                        <a href="/#"><h3>California</h3></a>
-                                        <p>United State of America</p>
-                                        <div className="rating_days d-flex justify-content-between">
-                                <span className="d-flex justify-content-center align-items-center">
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <a href="/#">(20 Review)</a>
-                                </span>
-                                            <div className="days">
-                                                <i className="fa fa-clock-o"> </i>
-                                                <a href="/#">5 Days</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single_place">
-                                    <div className="thumb">
-                                        <img src="asseats/img/place/6.png" alt="" />
-                                        <a href="/#" className="prise">$500</a>
-                                    </div>
-                                    <div className="place_info">
-                                        <a href="/#"><h3>Saintmartine Iceland</h3></a>
-                                        <p>United State of America</p>
-                                        <div className="rating_days d-flex justify-content-between">
-                                <span className="d-flex justify-content-center align-items-center">
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <i className="fa fa-star"> </i>
-                                     <a href="/#">(20 Review)</a>
-                                </span>
-                                            <div className="days">
-                                                <i className="fa fa-clock-o"> </i>
-                                                <a href="/#">5 Days</a>
-                                            </div>
-                                        </div>
+                                        <Link to={"/hotels"}><h3>Paris</h3></Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                            </div>
+                        </div>
 
-                    </div>
-                </div>
 
 
-                <div className="video_area video_bg overlay">
-                    <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="video_wrap text-center">
-                                    <h3>Enjoy Video</h3>
-                                    <div className="video_icon">
-                                        <a className="popup-video video_play_button"
-                                           href="https://www.youtube.com/watch?v=f59dDEk57i0">
-                                            <i className="fa fa-play"> </i>
-                                        </a>
-                                    </div>
+                                    {/*<a className="popup-video video_play_button"
+                                           href="https://www.youtube.com/watch?v=f59dDEk57i0"> </a>*/}
+                                        <iframe  title="videoframe" style={{height: "1000px", width:"100%", position: "relative", overflow: "hidden"}}  src="https://www.youtube.com/embed/-5Tb67fpAqE"
+                                                > </iframe>
                                 </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 
@@ -485,34 +380,31 @@ class Home extends React.Component {
                                         </h3>
                                         <div className="instagram_feed">
                                             <div className="single_insta">
-                                                <a href="/#">
                                                     <img src="asseats/img/instagram/1.png" alt="" />
-                                                </a>
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="/#">
                                                     <img src="asseats/img/instagram/2.png" alt="" />
-                                                </a>
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="/#">
+
                                                     <img src="asseats/img/instagram/3.png" alt="" />
-                                                </a>
                                             </div>
                                             <div className="single_insta">
-                                                <a href="/#">
+
                                                     <img src="asseats/img/instagram/4.png" alt="" />
-                                                </a>
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="/#">
+
                                                     <img src="asseats/img/instagram/5.png" alt="" />
-                                                </a>
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="/#">
+
                                                     <img src="asseats/img/instagram/6.png" alt="" />
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>

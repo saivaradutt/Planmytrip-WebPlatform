@@ -26,14 +26,9 @@ class Contact extends React.Component {
                                                 <nav>
                                                     <ul id="navigation">
                                                         <Link to={"/home"}><li>Home</li></Link>
-                                                        <li><a href="aboutUs.html">AboutUs</a></li>
-                                                        <li><a className=""
-                                                               href="Hotels.html">Hotels</a>
-                                                        </li>
+                                                        <Link to={"/about-us"}><li>AboutUs</li></Link>
+                                                        <Link to={"/hotels"}><li>Hotels</li></Link>
                                                         <Link to={"/sign-in"}><li>Logout</li></Link>
-
-
-
                                                         <Link to={"/Contact"}><li>ContactUs</li></Link>
                                                     </ul>
                                                 </nav>
@@ -46,10 +41,10 @@ class Contact extends React.Component {
                                                 </div>
                                                 <div className="social_links d-none d-xl-block">
                                                     <ul>
-                                                        <li><a href="#"> <i className="fa fa-instagram"> </i> </a></li>
-                                                        <li><a href="#"> <i className="fa fa-linkedin"> </i> </a></li>
-                                                        <li><a href="#"> <i className="fa fa-facebook"> </i> </a></li>
-                                                        <li><a href="#"> <i className="fa fa-google-plus"> </i> </a></li>
+                                                        <li><a href="/#"> <i className="fa fa-instagram"> </i> </a></li>
+                                                        <li><a href="/#"> <i className="fa fa-linkedin"> </i> </a></li>
+                                                        <li><a href="/#"> <i className="fa fa-facebook"> </i> </a></li>
+                                                        <li><a href="/#"> <i className="fa fa-google-plus"> </i> </a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -70,8 +65,7 @@ class Contact extends React.Component {
 
 
                             <div  style={{height: "480px", width:"100%", position: "relative", overflow: "hidden"}}>
-
-                                <iframe
+                                <iframe title="myframe"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.22689410892!2d-73.55348038447745!3d45.525639479101756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918e0c061b07f%3A0x647a6b6d7cb681a7!2sISI%2C%20L&#39;institut%20Sup%C3%A9rieur%20d&#39;Informatique!5e0!3m2!1sen!2sca!4v1598571040709!5m2!1sen!2sca"
                                     style={{height: "480px", width:"100%", position: "relative", overflow: "hidden"}} > </iframe>
 
@@ -162,7 +156,7 @@ class Contact extends React.Component {
                                 <div className="col-xl-4 col-md-6 col-lg-4 ">
                                     <div className="footer_widget">
                                         <div className="footer_logo">
-                                            <a href="#">
+                                            <a href="/#">
                                                 <img src="asseats/img/footer_logo.png" alt="" />
                                             </a>
                                         </div>
@@ -240,34 +234,31 @@ class Contact extends React.Component {
                                         </h3>
                                         <div className="instagram_feed">
                                             <div className="single_insta">
-                                                <a href="#">
-                                                    <img src="asseats/img/instagram/1.png" alt="" />
-                                                </a>
+                                                <img src="asseats/img/instagram/1.png" alt="" />
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="#">
-                                                    <img src="asseats/img/instagram/2.png" alt="" />
-                                                </a>
+                                                <img src="asseats/img/instagram/2.png" alt="" />
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="#">
-                                                    <img src="asseats/img/instagram/3.png" alt="" />
-                                                </a>
+
+                                                <img src="asseats/img/instagram/3.png" alt="" />
                                             </div>
                                             <div className="single_insta">
-                                                <a href="#">
-                                                    <img src="asseats/img/instagram/4.png" alt="" />
-                                                </a>
+
+                                                <img src="asseats/img/instagram/4.png" alt="" />
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="#">
-                                                    <img src="asseats/img/instagram/5.png" alt="" />
-                                                </a>
+
+                                                <img src="asseats/img/instagram/5.png" alt="" />
+
                                             </div>
                                             <div className="single_insta">
-                                                <a href="#">
-                                                    <img src="asseats/img/instagram/6.png" alt="" />
-                                                </a>
+
+                                                <img src="asseats/img/instagram/6.png" alt="" />
+
                                             </div>
                                         </div>
                                     </div>
@@ -303,9 +294,6 @@ class Contact extends React.Component {
 }
 
 export default Contact;
-{/*
-export default GoogleApiWrapper({
-    apiKey: "AIzaSyBXvAl1YrInIQ4n1IYOmSzrpj1ZjXgU7gY "
-})(Contact);*/}
+
 
 

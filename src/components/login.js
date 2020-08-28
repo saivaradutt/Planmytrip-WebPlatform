@@ -65,7 +65,7 @@ class login extends React.Component {
                 <img src="asseats/img/Signlogo.png" alt="" style={{borderRadius : 50, margin:"auto", padding : 50, marginLeft : "38%", height : 250, width :300}} />
 <div style={{marginLeft:"32%"}}>
             <form className="form-contact contact_form" onSubmit={this.handleSubmit}>
-                <h3>Sign In</h3>
+                <h3 style={{color:"white",marginLeft:"20%"}}>Sign In</h3>
                 <div className="col-sm-6">
                 <div className="form-group">
                     <input
@@ -101,7 +101,7 @@ class login extends React.Component {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="more_place_btn text-center">
-                            <Link to={"/home"} className="boxed-btn4 " type="submit">Submit</Link>
+                            <Link to={"/home"} className="boxed-btn4 ">Submit</Link>
                         </div>
                     </div>
                 </div>
