@@ -194,8 +194,8 @@ class Home extends React.Component {
                             <div className="col-lg-6">
                                 <div className="section_title text-center mb_70">
                                     <h3>Popular Places</h3>
-                                    <p>Suffered alteration in some form, by injected humour or good day randomised booth
-                                        anim 8-bit hella wolf moon beard words.</p>
+                                    <p>Wandering re-establishes the original harmony which once existed
+                                        between man and the universe.</p>
                                 </div>
                             </div>
                         </div>

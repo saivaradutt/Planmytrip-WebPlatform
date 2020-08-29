@@ -64,6 +64,9 @@ class Hotels extends React.Component {
 <div>
     <Link to={"/Confirmation"}>confirm</Link>
 </div>
+                <div>
+                    <Link to={"/Checkout"}>checkout</Link>
+                </div>
                 <footer className="footer">
                     <div className="footer_top">
                         <div className="container">
