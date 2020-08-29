@@ -192,68 +192,6 @@ import { connect } from 'react-redux'
                     </body>
                 </div>
 
-            {/*<form onSubmit={this.handleSubmit}>
-                <h3>Sign Up</h3>
-                <div className="form-group">
-                    <input
-                        name="firstName"
-                        type="text"
-                        className="form-control"
-                        placeholder="First name"
-                        value={this.state.firstName}
-                        onChange={this.handleChange}
-                    />
-                    <div style={{ fontSize: 12, color: "red" }}>
-                        {this.state.firstnameError}
-                    </div>
-                </div>
-                <div className="form-group">
-                    <input
-                        name="lastName"
-                        type="text"
-                        className="form-control"
-                        placeholder="Last name"
-                        value={this.state.lastName}
-                        onChange={this.handleChange}
-                    />
-                    <div style={{ fontSize: 12, color: "red" }}>
-                        {this.state.lastnameError}
-                    </div>
-                </div>
-                <div className="form-group">
-                    <input
-                        name="email"
-                        type="email"
-                        className="form-control"
-                        placeholder="Email"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        value={this.state.email}
-                        onChange={this.handleChange}
-                    />
-                    <div style={{ fontSize: 12, color: "red" }}>
-                        {this.state.emailError}
-                    </div>
-                </div>
-                <div className="form-group">
-                    <input
-                        type="password"
-                        name="password"
-                        className="form-control"
-                        placeholder="Password"
-                        value={this.state.password}
-                        onChange={this.handleChange}
-                    />
-                    <div style={{ fontSize: 12, color: "red" }}>
-                        {this.state.passwordError}
-                    </div>
-                </div>
-                <button type="submit" className= "btn btn-primary btn-block" onClick={this.routeChange}>Submit</button>
-                {authError ? <p>{ authError } </p> : null}
-                <p className="forgot-password text-right">
-                    Already registered!!!  <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
-                </p>
-
-            </form>*/}
             </div>
         );
     }

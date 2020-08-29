@@ -1,0 +1,55 @@
+[
+  {
+    "id": 7,
+    "name": "Avalon Hotel Beverly Hills",
+    "Address": "9400 West Olympic Boulevard Beverly Hills, CA 90212",
+    "Telephone": "(310) 277-5221",
+    "city": "California",
+    "description": "The Avalon Hotel is inspired by timeless mid-century modern design, personal service and lasting memories. The hotel embraces it’s relaxed California environment in its design, with views from guest rooms and the restaurant of an hourglass shaped pool and private cabanas."
+  },
+  {
+    "id": 8,
+    "name": "Avalon Hotel Beverly Hills",
+    "Address": "Kawasan Pariwisata Nusa Dua Lot N 2, Nusa Dua 80363 Indonesia",
+    "Telephone": "1 (855) 821-4553",
+    "city": "Bali",
+    "country": "Thailand",
+    "description": "Located in the exclusive Nusa Dua resort area, on Bali's most beautiful beach, The Laguna, a Luxury Collection Resort & Spa, Nua Dua, Bali boasts panoramic view of Indian Ocean."
+  },
+  {
+    "id": 9,
+    "name": "Montcalm Royal London House - City of London",
+    "Address": "Royal London House 22-25 Finsbury Square, London EC2A 1DX England",
+    "Telephone": "011 44 20 8106 5703",
+    "city": "London",
+    "country": "United Kingdom",
+    "description": "Montcalm Royal London House provides an ideal mix of value, comfort and convenience, it offers a luxury setting with an array of amenities designed for travellers like you."
+  },
+  {
+    "id": 10,
+    "name": "Lennox Hotels",
+    "Address": "1900 Collins Avenue, Miami Beach, FL 33139, US",
+    "Telephone": "(310) 277-5221",
+    "city": "Miami",
+    "country": "Unites States Of America",
+    "description": "Lennox Hotels Miami Beach in Miami Beach offers a private beach area and outdoor swimming pool. Well located in the South Beach district, this hotel features a fitness centre."
+  },
+  {
+    "id": 11,
+    "name": "Athenswas Hotel",
+    "Address": "5, Dionysiou Areopagitou Str. 11742 Athens",
+    "Telephone": "(310) 277-5221",
+    "city": "Athen",
+    "country": "Greece",
+    "description": "AthensWas is a superior luxury hotel in Athens situated in the beating heart of the city and just a breath away from the Acropolis Museum, the sacred Acropolis Hill and Plaka (Old Town)."
+  },
+  {
+    "id": 12,
+    "name": "Catalonia Punta Cana",
+    "Address": "Playas de Bavaro, Cabeza de Toro, 23000 Punta Cana, Dominican Republic",
+    "Telephone": "(310) 277-5221",
+    "city": "Saint Martin",
+    "country": "Sint Maarten",
+    "description": "Located in Punta Cana, all-inclusive beachfront resort features an outdoor pool, full-service spa and recreational activities. It offers 10 dining options, live entertainment and a variety of water sports on Bavaro Beach."
+  }
+]

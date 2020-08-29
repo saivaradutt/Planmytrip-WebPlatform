@@ -63,7 +63,7 @@ class login extends React.Component {
                 <body style = {{backgroundImage:"url(https://static.vecteezy.com/system/resources/previews/000/538/894/non_2x/abstract-black-hexagon-pattern-on-yellow-neon-background-technology-style-honeycomb-vector.jpg)"}}>
 
                 <img src="asseats/img/Signlogo.png" alt="" style={{borderRadius : 50, margin:"auto", padding : 50, marginLeft : "38%", height : 250, width :300}} />
-<div style={{marginLeft:"32%"}}>
+            <div style={{marginLeft:"32%"}}>
             <form className="form-contact contact_form" onSubmit={this.handleSubmit}>
                 <h3 style={{color:"white",marginLeft:"20%"}}>Sign In</h3>
                 <div className="col-sm-6">
