@@ -32,18 +32,19 @@ class AboutUs extends React.Component {
                                         <div className="story_info">
                                             <div className="row">
                                                 <div className="col-lg-9">
-                                                    <p>Consulting represents success at realizing the company is going
-                                                        in the wrong direction. The only time the company fails is when
-                                                        it is not possible to do a turnaround anymore. We help companies
-                                                        pivot into more profitable directions where they can expand and
-                                                        grow. It is inevitable that companies will end up making a few
-                                                        mistakes; we help them correct these mistakes.</p>
-                                                    <p>Consulting represents success at realizing the company is going
-                                                        in the wrong direction. The only time the company fails is when
-                                                        it is not possible to do a turnaround anymore. We help companies
-                                                        pivot into more profitable directions where they can expand and
-                                                        grow. It is inevitable that companies will end up making a few
-                                                        mistakes; we help them correct these mistakes.</p>
+                                                    <p>Nurtured from the seed of a single great idea - to empower the traveller - PlanMyTrip
+                                                        is a pioneer in online travel industry. Founded in the year 2020 , PlanMyTrip came to life
+                                                        to empower the travellers with instant bookings and comprehensive choices.
+                                                        The company initiated its journey serving the  travel market offering a range of
+                                                        best-value products and services powered by technology and round-the-clock customer support.</p>
+                                                    <p>PlanMyTrip’s rise has been led by the vision and the spirit of each
+                                                        one of its employees, for whom no idea was too big and no problem too
+                                                        difficult. With untiring determination, MakeMyTrip has proactively
+                                                        diversified its product offering, adding a variety of online and
+                                                        offline products and services. PlanMyTrip has stayed ahead of the
+                                                        curve by continually evolving its technology to meet the ever-changing
+                                                        demands of the rapidly developing global travel market, steadily establishing
+                                                        itself as Canada`s leading online travel company.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -149,7 +149,7 @@ class Home extends React.Component {
                                         <img src="asseats/img/svg_icon/2.svg" alt="" />
                                     </div>
                                     <h3>Luxuries Hotel</h3>
-                                    <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                                    <p>Book cheap, budget and luxury hotels at best price from leading ...</p>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6">
@@ -158,7 +158,7 @@ class Home extends React.Component {
                                         <img src="asseats/img/svg_icon/3.svg" alt="" />
                                     </div>
                                     <h3>Travel Guide</h3>
-                                    <p>A wonderful serenity has taken to the possession of my entire soul.</p>
+                                    <p>Travel information to inspire global travellers. From cities to airports, cruise ports to ski</p>
                                 </div>
                             </div>
                         </div>
@@ -167,64 +167,64 @@ class Home extends React.Component {
 
 
 
-                <div className="testimonial_area">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="testmonial_active owl-carousel">
-                                    <div className="single_carousel">
-                                        <div className="row justify-content-center">
-                                            <div className="col-lg-8">
-                                                <div className="single_testmonial text-center">
-                                                    <div className="author_thumb">
-                                                        <img src="asseats/img/testmonial/author.png" alt="" />
-                                                    </div>
-                                                    <p>"Working in conjunction with humanitarian aid agencies, we have
-                                                        supported programmes to help alleviate human suffering.</p>
-                                                    <div className="testmonial_author">
-                                                        <h3>- Micky Mouse</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="single_carousel">
-                                        <div className="row justify-content-center">
-                                            <div className="col-lg-8">
-                                                <div className="single_testmonial text-center">
-                                                    <div className="author_thumb">
-                                                        <img src="asseats/img/testmonial/author.png" alt="" />
-                                                    </div>
-                                                    <p>"Working in conjunction with humanitarian aid agencies, we have
-                                                        supported programmes to help alleviate human suffering.</p>
-                                                    <div className="testmonial_author">
-                                                        <h3>- Tom Mouse</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="single_carousel">
-                                        <div className="row justify-content-center">
-                                            <div className="col-lg-8">
-                                                <div className="single_testmonial text-center">
-                                                    <div className="author_thumb">
-                                                        <img src="asseats/img/testmonial/author.png" alt="" />
-                                                    </div>
-                                                    <p>"Working in conjunction with humanitarian aid agencies, we have
-                                                        supported programmes to help alleviate human suffering.</p>
-                                                    <div className="testmonial_author">
-                                                        <h3>- Jerry Mouse</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/*<div className="testimonial_area">*/}
+                {/*    <div className="container">*/}
+                {/*        <div className="row">*/}
+                {/*            <div className="col-xl-12">*/}
+                {/*                <div className="testmonial_active owl-carousel">*/}
+                {/*                    <div className="single_carousel">*/}
+                {/*                        <div className="row justify-content-center">*/}
+                {/*                            <div className="col-lg-8">*/}
+                {/*                                <div className="single_testmonial text-center">*/}
+                {/*                                    <div className="author_thumb">*/}
+                {/*                                        <img src="asseats/img/testmonial/author.png" alt="" />*/}
+                {/*                                    </div>*/}
+                {/*                                    <p>"Working in conjunction with humanitarian aid agencies, we have*/}
+                {/*                                        supported programmes to help alleviate human suffering.</p>*/}
+                {/*                                    <div className="testmonial_author">*/}
+                {/*                                        <h3>- Micky Mouse</h3>*/}
+                {/*                                    </div>*/}
+                {/*                                </div>*/}
+                {/*                            </div>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                    <div className="single_carousel">*/}
+                {/*                        <div className="row justify-content-center">*/}
+                {/*                            <div className="col-lg-8">*/}
+                {/*                                <div className="single_testmonial text-center">*/}
+                {/*                                    <div className="author_thumb">*/}
+                {/*                                        <img src="asseats/img/testmonial/author.png" alt="" />*/}
+                {/*                                    </div>*/}
+                {/*                                    <p>"Working in conjunction with humanitarian aid agencies, we have*/}
+                {/*                                        supported programmes to help alleviate human suffering.</p>*/}
+                {/*                                    <div className="testmonial_author">*/}
+                {/*                                        <h3>- Tom Mouse</h3>*/}
+                {/*                                    </div>*/}
+                {/*                                </div>*/}
+                {/*                            </div>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                    <div className="single_carousel">*/}
+                {/*                        <div className="row justify-content-center">*/}
+                {/*                            <div className="col-lg-8">*/}
+                {/*                                <div className="single_testmonial text-center">*/}
+                {/*                                    <div className="author_thumb">*/}
+                {/*                                        <img src="asseats/img/testmonial/author.png" alt="" />*/}
+                {/*                                    </div>*/}
+                {/*                                    <p>"Working in conjunction with humanitarian aid agencies, we have*/}
+                {/*                                        supported programmes to help alleviate human suffering.</p>*/}
+                {/*                                    <div className="testmonial_author">*/}
+                {/*                                        <h3>- Jerry Mouse</h3>*/}
+                {/*                                    </div>*/}
+                {/*                                </div>*/}
+                {/*                            </div>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
 
 
