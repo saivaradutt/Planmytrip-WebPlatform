@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 class Contact extends React.Component {
     onButtonClickHandler = () => {
-        window.alert('Thanks')
+        window.alert('Thanks for contacting us , We will get back to you shortly')
     };
     render() {
         return(

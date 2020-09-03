@@ -70,28 +70,10 @@ import { connect } from 'react-redux'
         }
     };
     routeChange=()=>{
-        this.props.history.push('/home');
+        this.props.history.push('/sign-in');
         console.log('redirect')
     }
 
-
-    /*insertData(event){
-        const fName = (event.target.firstName);
-        const lName = (event.target.lastName);
-        const email = (event.target.email);
-        const password = event.target.password;
-
-
-        const url = "http://localhost:3001/login/" + fName+lName+email+password;
-
-        console.log(url);
-
-        fetch(url,{
-            method: 'POST'
-        }).then(alert('Added : ' + fName))
-
-    }
-*/
     render() {
         const { authError } = this.props;
         return (<div>
