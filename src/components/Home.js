@@ -97,14 +97,10 @@ class Home extends React.Component {
                         <div className="row justify-content-center">
                             <div className="col-lg-6">
                                 <div className="section_title text-center mb_70">
-<<<<<<< HEAD
-                                    <h3>Popular Places</h3></div>
-=======
                                     <h3>Popular Places</h3>
                                     <p>Wandering re-establishes the original harmony which once existed
                                         between man and the universe.</p>
                                 </div>
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
                             </div>
                         </div>
                         <div className="row">

@@ -1,21 +1,14 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-<<<<<<< HEAD
+
 import Footer from "./Footer";
 import Header from "./Header";
-=======
-
-
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
-
 
 class Checkout extends React.Component {
     render() {
         return(
             <div >
-<<<<<<< HEAD
                 <Header/>
-=======
 
                 <header>
                     <div className="header-area ">
@@ -69,9 +62,6 @@ class Checkout extends React.Component {
                         </div>
                     </div>
                 </header>
-
-
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
                 <div className="bradcam_area bradcam_bg_2">
                     <div className="container">
                         <div className="row">
@@ -84,7 +74,6 @@ class Checkout extends React.Component {
                     </div>
                 </div>
                 <div>
-<<<<<<< HEAD
                     <div style={{marginLeft:"32%", paddingTop:50}}>
                         <form className="form-contact contact_form" >
                             <div className="col-sm-6">
@@ -154,7 +143,6 @@ class Checkout extends React.Component {
                     </div>
                 </div>
                 <Footer/>
-=======
                 <div style={{marginLeft:"32%", paddingTop:50}}>
                     <form className="form-contact contact_form" >
                         <div className="col-sm-6">
@@ -223,9 +211,7 @@ class Checkout extends React.Component {
                     </form>
                 </div>
             </div>
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
-            </div>
-
+        
         );
 
     }
@@ -234,8 +220,6 @@ class Checkout extends React.Component {
 
 
 }
-<<<<<<< HEAD
+
 export default Checkout;
-=======
-export default Checkout;
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
+

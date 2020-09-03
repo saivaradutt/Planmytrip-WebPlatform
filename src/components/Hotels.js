@@ -36,7 +36,6 @@ class Hotels extends React.Component {
                                 alt={hotel.name}
                             />
                         </div>
-<<<<<<< HEAD
                         <div className="place_info">
                             <CardTitle title={hotel.name}>
                                 <p>{hotel.name}</p>
@@ -46,77 +45,6 @@ class Hotels extends React.Component {
                                 <p>{hotel.description}</p>
                                 <div>
                                     <Link to={"/Checkout"}>Book</Link>
-=======
-                    </div>
-                </header>
-
-<div>
-    <Link to={"/Confirmation"}>confirm</Link>
-</div>
-                <div>
-                    <Link to={"/Checkout"}>checkout</Link>
-                </div>
-                <footer className="footer">
-                    <div className="footer_top">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-4 col-md-6 col-lg-4 ">
-                                    <div className="footer_widget">
-                                        <div className="footer_logo">
-                                            <a href="/#">
-                                                <img src="asseats/img/footer_logo.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <p> 2100 Boul. de Maisonneuve E, <br/> Montréal, QC H2K 4S1<br/>
-                                            <a href="/#">+1
-                                                (514) 842-2426</a> <br/>
-
-                                        </p>
-                                        <div className="socail_links">
-                                            <ul>
-                                                <li>
-                                                    <a href="/#">
-                                                        <i className="ti-facebook"> </i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/#">
-                                                        <i className="ti-twitter-alt"> </i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/#">
-                                                        <i className="fa fa-instagram"> </i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/#">
-                                                        <i className="fa fa-pinterest"> </i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="/#">
-                                                        <i className="fa fa-youtube-play"> </i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="col-xl-2 col-md-6 col-lg-2">
-                                    <div className="footer_widget">
-                                        <h3 className="footer_title">
-                                            Company
-                                        </h3>
-                                        <ul className="links">
-                                            <li><a href="/#">Hotels</a></li>
-                                            <li><a href="/#">About</a></li>
-                                            <li><a href="/#"> Gallery</a></li>
-                                            <li><a href="/#"> Contact</a></li>
-                                        </ul>
-                                    </div>
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
                                 </div>
                             </CardTitle>
                         </div>

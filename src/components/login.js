@@ -42,7 +42,7 @@ class login extends React.Component {
     handleSubmit = event => {
         event.preventDefault();
         const isValid = this.validate();
-        
+        console.log(isValid);
         if (isValid) {
             console.log(this.state);
             this.props.signIn(this.state);

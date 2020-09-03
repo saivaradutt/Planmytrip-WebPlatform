@@ -11,13 +11,9 @@ import AboutUs from "./components/AboutUs";
 import Hotels from "./components/Hotels";
 import Confirmation from "./components/Confirmation";
 import Checkout from "./components/Checkout";
-<<<<<<< HEAD
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-
-=======
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
 const App = (props) => {
    // const { auth } = props;
     //const links = auth.uid ? <Link className="navbar-brand" to={"/"} onClick={props.signOut}>Log Out</Link> : null;
@@ -39,13 +35,9 @@ const App = (props) => {
                             <Route path="/Contact" component={Contact}/>
                             <Route path="/Confirmation" component={Confirmation}/>
                             <Route path="/Checkout" component={Checkout}/>
-<<<<<<< HEAD
                             <Route path="/Footer" component={Footer}/>
                             <Route path="/Header" component={Header}/>
-=======
 
-
->>>>>>> 4c80434998a0dd07fe55288c739404018e8cd015
                         </Switch>
                     </div>
                 </div>
